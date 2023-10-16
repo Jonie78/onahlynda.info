@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>My Portfolio Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/152616f05a.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Creative Writer</p>
+                <h1>Hi, I am <span>Lynda</span> Onah </h1>
+            </div>
+        </div>
+    </div>
+    
+    <!---------about----------------->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Lyndapfp1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Lynda Onah, 
+                        a passionate Writer and Podcaster with a background in Communications. 
+                        My journey in Creative Writing Field has been defined by [Your Key Achievements/Experiences], 
+                        and I'm driven by a commitment to [Your Belief or Goal]. Beyond work, 
+                        I find joy in [Your Hobbies/Interests] 
+                        and believe in giving back through [Your Volunteer/Community Involvement]. 
+                        With a love for [One of Your Key Interests], I'm constantly inspired to [What Inspires You]. 
+                        Welcome to my world, where I share insights, experiences, 
+                        and a glimpse into my [Your Unique Perspective or Expertise]. 
+                        Let's connect and explore together.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Skill 1</span><br>Lorem ipsum dolor</li>
+                        <li><span>Skill 2</span><br>Lorem ipsum dolor</li>
+                        <li><span>Skill 3</span><br>Lorem ipsum dolor</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Experience 1</span><br>Lorem ipsum dolor</li>
+                        <li><span>Experience 2</span><br>Lorem ipsum dolor</li>
+                        <li><span>Experience 3</span><br>Lorem ipsum dolor</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Education</span><br>Lorem ipsum dolor</li>
+                        <li><span>Education</span><br>Lorem ipsum dolor</li>
+                        <li><span>Education</span><br>Lorem ipsum dolor</li>
+                    </ul>
+                </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <!----------------services---------------------------->
+    <div id="services">
+        <div class="container">
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Service offered</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-podcast"></i>
+                    <h2>Service offered2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h2>Service offered3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!----------------portfolio---------------------------->
+    <div id="portfolio">
+        <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/docimg1.png">
+                <div class="layer">
+                    <h3>Work1</h3>
+                    <p>(Add Description)</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/docimg2.png">
+                <div class="layer">
+                    <h3>Work2</h3>
+                    <p>(Add Description)</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/docimg3.png">
+                <div class="layer">
+                    <h3>Work3</h3>
+                    <p>(Add Description)</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+    </div>
+
+    <!---------------contacts-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"> </i>onahlynda6@gmail.com</p>
+                <p><i class="fa-solid fa-phone"> </i>+234 8106335928</p>
+                <div class="social-icons">
+                    <a href=" https://www.facebook.com/onah.lynda.1?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/lynda_onah?t=y03quKwUGO6yuyHEDjKT7A&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Finvites%2Fcontact%2F%3Fi%3D1otw4utg35080%26utm_content%3D31zdvbk&h=AT2RgEeInGJimV2sKXeoWG_FCr1bPqQMigtONjonCLdKOooC51Qq5Mcy2NBF2LxHROy7m5f_4KFFVVpas42w98NMxlVA_eSYE0GsHM9BLrQOIuQ_skWmqskDpNGPkcEPmqcZlyY2Nan19Bo&s=1"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=" https://wa.link/r7dnf6"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Enter Name" required>
+                  <input type="email" name="email" placeholder="Enter Email" required>
+                  <textarea name="Message"  rows="6" placeholder="Enter Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Onahlynda</p>
+    </div>
+</div>
+   
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById ("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+            </script>
+            <script>
+  const scriptURL = 'https://scrhttps://script.google.com/macros/s/AKfycbzVLrHMEbuvHRkRkGG1E9QQg5O3qu5ptZZhNaliQGeDS5sU1sD41D0dU0SOgHef_XSt/execipt.google.com/macros/s/AKfycbzPJ5LQHkt7cBYk-JDSMgoW0fo38QCFVWfyTv9rKPX0gO_rfrawaIGqhxJ4TB5F25Hu/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
